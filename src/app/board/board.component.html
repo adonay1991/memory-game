@@ -1,0 +1,19 @@
+<div class="board">
+  <app-card
+    class="btn"
+    *ngFor="let card of cards"
+    [card]="card"
+    (cardClick)="decide($event)"
+  >
+  </app-card>
+</div>
+
+<app-buttom>Start-Game</app-buttom>
+
+<div>
+  <h1>Turnos Jugados: {{ turns }}</h1>
+</div>
+
+<div>
+  <h1>Puntos: {{ points }}</h1>
+</div>

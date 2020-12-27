@@ -1,0 +1,21 @@
+<!-- ---------------------ORIGINAL------------------- -->
+<!-- <div class="card" (click)="hasClicked($event)">
+  <div>
+    <span [hidden]="!card.visible">{{ card.name }}</span>
+  </div>
+  <div>
+    <app-buttom>{{ card.visible ? "Hide" : "Show" }}</app-buttom>
+  </div>
+</div> -->
+
+<!-- ----------------------PRUEBAS------------------------- -->
+
+<div
+  class="card"
+  (click)="hasClicked($event)"
+  [style.background]="card.background"
+>
+  <div>
+    <span [hidden]="!card.visible">{{ card.name }}</span>
+  </div>
+</div>
