@@ -1,19 +1,21 @@
 <div class="board">
+  <!-- Componente que itera las cards mediante la driectiva NGFOR -->
   <app-card
-    class="btn"
     *ngFor="let card of cards"
     [card]="card"
     (cardClick)="decide($event)"
   >
   </app-card>
 </div>
-
-<app-buttom>Start-Game</app-buttom>
-
-<div>
-  <h1>Turnos Jugados: {{ turns }}</h1>
+<div class="cajaBoton">
+  <!-- Boton para inciar juego -->
+  <button (click)="startGame()" class="boton">Start Game</button>
 </div>
 
-<div>
-  <h1>Puntos: {{ points }}</h1>
+<div class="turnos">
+  <h1>Turns Played: {{ turns }}</h1>
+</div>
+
+<div class="puntos">
+  <h1>Points: {{ points }}</h1>
 </div>

@@ -1,6 +1,33 @@
 .board {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 700px;
+  max-width: 50rem;
+  margin-left: 35rem;
+  display: none;
+}
+
+.boton {
+  height: 100px;
+  width: 300px;
+  font-size: x-large;
+  color: white;
+  background-color: #585858;
+}
+
+.cajaBoton {
+  display: flex;
+  justify-content: center;
+  padding: 5rem;
+}
+
+.turnos {
+  display: flex;
+  justify-content: center;
+}
+
+.puntos {
+  display: flex;
+  justify-content: center;
 }

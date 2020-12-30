@@ -10,12 +10,16 @@
 
 <!-- ----------------------PRUEBAS------------------------- -->
 
+<!-- Div que contiene el evento que se recibe una vez se hace click // cambio de estilo en el fondo de cada card (Verde = Match / Rojo = Incorrect Match) -->
 <div
   class="card"
-  (click)="hasClicked($event)"
+  (click)="card.matched ? null : hasClicked($event)"
   [style.background]="card.background"
 >
+  <!-- Div con propiedad HIDDEN para ocultar los nombres detras de cada card -->
   <div>
-    <span [hidden]="!card.visible">{{ card.name }}</span>
+    <span [hidden]="!card.visible && card.background != 'green'">{{
+      card.name
+    }}</span>
   </div>
 </div>
