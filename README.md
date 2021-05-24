@@ -1,3 +1,7 @@
+# Game information
+
+It is a simple game based on the famous memory, just clone it and have fun ... :D
+
 # MemoriGame
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
